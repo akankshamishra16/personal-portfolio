@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --accent-color: #00bcd4;
+    --section-bg: #1e1e1e;
+    --link-color: #00bcd4;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* No backdrop-filter here to avoid blurring text */
+  }
+  
+ 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+ 
+   nav h1 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  } 
+  nav h1,
+  nav ul li a {
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); /* subtle glow for visibility */
+  }
+  
+ 
+   nav ul {
+    display: flex;
+    list-style: none;
+  } 
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  .section {
+    padding: 6rem 2rem 4rem; /* extra top padding to prevent overlap */
+    background-color: var(--section-bg);
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 8px;
+  }
+  .section {
+    padding: 6rem 2rem 4rem; /* enough space to scroll under header */
+  }
+  
+  .section h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+    color: rgb(156, 156, 231);
+    font-size: 20px;
+  }
+  ul li p{
+    color: white;
+    font-size: 15px;
+  }
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .home {
+    text-align: center;
+  }
+  
+  .highlight {
+    color: var(--accent-color);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
